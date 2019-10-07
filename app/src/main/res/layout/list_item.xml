@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/contact_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/person_profile"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/contact_avatar"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:text=""
+            android:id="@+id/name_contact"/>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_phone"
+            android:id="@+id/btn_call"
+            android:onClick="doCall"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
